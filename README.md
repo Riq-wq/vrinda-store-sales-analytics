@@ -89,9 +89,7 @@ The raw export (`Vrinda_Store_Data_Analysis_raw.xlsx`, 19 columns) was processed
 
 See [`reports/Vrinda_Store_Analysis_Report.pdf`](reports/Vrinda_Store_Analysis_Report.pdf) for the complete write-up: methodology, all findings, and recommendations.
 
-## 🎥 Project Walkthrough
 
-A video walkthrough of the full project is linked inside the workbook (`Project Video Link` sheet).
 
 ## 👤 Author
 
