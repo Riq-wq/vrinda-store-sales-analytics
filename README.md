@@ -2,9 +2,9 @@
 
 <img src="assets/workflow.svg" alt="Vrinda Store analytics workflow" width="100%" />
 
-# 🛍️ Vrinda Store — Sales & Order Analytics (2022)
+# Vrinda Store Sales & Order Analytics (2022)
 
-**End-to-end analysis of 31,000+ e-commerce orders across 7 sales channels**, cleaned with Excel Power Query and visualized with a native Excel pivot dashboard.
+**End-to-end analysis of 31,047 e-commerce orders across 7 sales channels**, cleaned with Excel Power Query and visualized with a native Excel pivot dashboard.
 
 ![Excel](https://img.shields.io/badge/Excel-Power_Query-c9a227?style=flat-square&logo=microsoftexcel&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-Pivot_Charts-1f2a44?style=flat-square&logo=microsoftexcel&logoColor=white)
@@ -15,7 +15,7 @@
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Vrinda Store sells ethnic and western wear (Kurtas, Sets, Sarees, Western Dresses) to customers across India through **seven channels** — Amazon, Flipkart, Myntra, Ajio, Nalli, Meesho, and others. In 2022 the business processed **31,047 orders**, but the data existed only as a flat, unstructured transaction log with no derived time fields, no demographic grouping, and no way to answer basic performance questions at a glance.
 
@@ -30,20 +30,20 @@ Without this visibility, inventory planning, channel investment, and marketing s
 
 ---
 
-## 🔍 Key Insights *(from the visualizations in this repo)*
+## Key Insights (from the visualizations in this repo)
 
 | # | Insight | Evidence |
-|---|---|---|
-| 1 | Revenue peaked in **March** (₹1.93M) and steadily declined toward year-end, bottoming out in **November** (₹1.62M) — a ~16% drop from peak to trough. | `Monthly Orders vs Sales` chart |
-| 2 | **Women's wear drives ~64% of total revenue** (₹13.6M) vs. **36%** from menswear (₹7.6M). | `Revenue by Gender` chart |
-| 3 | **Sets and Kurtas together account for over 70% of orders**, making them the core inventory to protect against stockouts. | `Revenue by Category` chart |
-| 4 | **Amazon is the dominant channel** (~11,000 orders), more than 1.5x the volume of the next-largest channel, Myntra. | `Revenue by Channel` chart |
+|---|---------|----------|
+| 1 | Revenue peaked in **March** (₹1.93M) and declined through the year, bottoming out in **November** (₹1.62M) — a ~16% drop from peak to trough. | `Monthly Orders vs Sales` chart |
+| 2 | **Women's wear drives ~64% of total revenue** (₹13.6M) vs. **36% from menswear** (₹7.6M). | `Revenue by Gender` chart |
+| 3 | **Sets and Kurtas together account for ~73% of orders**, making them the core inventory to protect against stockouts. | `Revenue by Category` chart |
+| 4 | **Amazon is the dominant channel** (11,016 orders), more than 1.5x the volume of the next-largest channel, Myntra. | `Revenue by Channel` chart |
 | 5 | **92.3% of orders are successfully delivered**; cancellations, returns, and refunds together account for ~7.7% of volume — a benchmark worth tracking over time. | `Order Status Breakdown` chart |
 | 6 | **Maharashtra, Karnataka, and Uttar Pradesh** are the top three revenue-generating states. | `Top 10 States by Revenue` chart |
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 vrinda-store-analysis/
@@ -53,29 +53,39 @@ vrinda-store-analysis/
 ├── assets/
 │   ├── workflow.svg                              # Animated pipeline banner (above)
 │   └── charts/                                   # Chart images used in this README
+│       ├── monthly_orders_vs_sales.png
+│       ├── gender_revenue_split.png
+│       ├── order_status.png
+│       ├── category_revenue.png
+│       ├── channel_revenue.png
+│       └── top_states.png
 ├── reports/
 │   └── Vrinda_Store_Analysis_Report.pdf           # Full written report
-└── README.md
+├── README.md
 ```
 
 ---
 
-## 🧹 What Was Cleaned
+## What Was Cleaned
 
-The raw export (`Vrinda_Store_Data_Analysis_raw.xlsx`, 19 columns) was processed into the cleaned workbook using **Excel Power Query**, which:
+The raw export (`Vrinda_Store_Data_Analysis_raw.xlsx`, 19 columns, 31,047 rows) was processed into the cleaned workbook using **Excel Power Query**, which:
 
-- Parsed `Date` and derived a **`Month`** column for time-series grouping.
-- Bucketed `Age` into an **`Age Group`** field (Teenager / Adult / Senior) for demographic analysis.
-- Fed two **pivot tables** (`Order vs Sales` by month, `Amount by Gender`) with native Excel `BarChart` and `PieChart` visualizations on a dedicated report sheet.
-- Verified zero missing values across all 31,047 rows before analysis.
+- Parsed `Date` and derived a **`Month`** column for time-series grouping
+- Bucketed `Age` into an **`Age Group`** field (Teenager / Adult / Senior) for demographic analysis
+- Verified **zero missing values** across all 31,047 rows before analysis
+- Fed two **pivot tables** (`Order vs Sales` by month, `Amount by Gender`) with native Excel `BarChart` and `PieChart` visualizations on a dedicated report sheet
 
-## 🛠️ Tools & Stack
+---
+
+## Tools & Stack
 
 - **Microsoft Excel (Power Query)** — data cleaning and field engineering
 - **Microsoft Excel** — pivot tables, dashboard, native charts
 - **ReportLab** — programmatic PDF report generation
 
-## 📊 Dashboard Preview
+---
+
+## Dashboard Preview
 
 <p align="center">
   <img src="assets/charts/monthly_orders_vs_sales.png" width="70%"><br>
@@ -85,16 +95,18 @@ The raw export (`Vrinda_Store_Data_Analysis_raw.xlsx`, 19 columns) was processed
   <img src="assets/charts/channel_revenue.png" width="45%">
 </p>
 
-## 📄 Full Report
+---
+
+## Full Report
 
 See [`reports/Vrinda_Store_Analysis_Report.pdf`](reports/Vrinda_Store_Analysis_Report.pdf) for the complete write-up: methodology, all findings, and recommendations.
 
+---
 
-
-## 👤 Author
+## Author
 
 **Hassan Jumaa (Riq)**
-Data Analyst | [Portfolio](https://riq-wq.github.io/Myportfolio) · [GitHub](https://github.com/Riq-wq) · [LinkedIn](https://linkedin.com/in/mrisa-juma-56a600416)
+Data Analyst | [Portfolio](https://riq-wq.github.io/Myportfolio) | [GitHub](https://github.com/Riq-wq) | [LinkedIn](https://linkedin.com/in/mrisa-juma-56a600416)
 
 ---
 
