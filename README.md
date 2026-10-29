@@ -30,6 +30,46 @@ Without this visibility, inventory planning, channel investment, and marketing s
 
 ---
 
+## Key Statistics (for interview prep)
+
+| Metric | Value |
+|--------|-------|
+| Total orders | 31,047 |
+| Total columns | 19 |
+| Missing values | 0 |
+| Duplicate rows | 0 |
+| Total revenue | ₹21,176,377 |
+| Average order value | ₹682 |
+| Women's revenue | ₹13,518,362 |
+| Men's revenue | ₹7,581,972 |
+| Amazon orders | 11,016 |
+| Delivered orders | 28,641 (92.3%) |
+| Cancelled orders | 844 |
+| Returned orders | 1,045 |
+| Refunded orders | 517 |
+| Top state | Maharashtra (₹2,990,221) |
+
+---
+
+## Data-Quality Gate — Interview Checks
+
+These are the specific checks an interviewer may ask about. Be ready to answer each one:
+
+| Check | What It Proves | Status |
+|-------|---------------|--------|
+| No duplicate Order IDs | Data integrity verified before analysis | 0 duplicates |
+| No nulls | All fields populated | 0 nulls across 19 columns |
+| Date parsed correctly | `Date` column as datetime | Verified |
+| Age groups created | Teenager / Adult / Senior | Verified |
+| Month field derived | From order date | Verified |
+| Categories consistent | Kurta, Set, Saree, Western Dress, Top, Ethnic Dress, Blouse, Bottom | Verified |
+| Channels valid | Amazon, Flipkart, Myntra, Ajio, Nalli, Meesho, Others | Verified |
+| Status values valid | Delivered, Returned, Cancelled, Refunded | Verified |
+| Amount positive | All order values > 0 | Verified |
+| States valid | Indian state names | Verified |
+
+---
+
 ## Key Insights (from the visualizations in this repo)
 
 | # | Insight | Evidence |
