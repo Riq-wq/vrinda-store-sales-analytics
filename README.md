@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/workflow.svg" alt="Vrinda Store analytics workflow" width="100%" />
+<img src="assets/dashboard.png" alt="Vrinda Store Dashboard" width="100%" />
 
 # Vrinda Store Sales & Order Analytics (2022)
 
